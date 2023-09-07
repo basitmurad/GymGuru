@@ -13,11 +13,16 @@
         android:theme="@style/Theme.GymGuru"
         tools:targetApi="31">
         <activity
-            android:name=".ui.DashboardActivity"
+            android:name=".ui.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.DetailActivity"
+            android:name=".ui.LoginActivity"
             android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,13 +31,17 @@
         </activity>
         <activity
             android:name=".ui.RegistrationActivity"
-            android:exported="false" />
+            android:exported="true"></activity>
         <activity
             android:name=".ui.OnBoardingActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
